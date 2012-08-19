@@ -6,7 +6,7 @@ License:	GPL v2+
 Group:		Development/Libraries
 URL:		http://www.progdan.cz/2012/05/libkgoogle-libkgapi
 Source0:	ftp://ftp.kde.org/pub/kde/stable/libkgapi/%{version}/src/%{name}-%{version}.tar.bz2
-# Source-md5:	b4cefa643e95f5670997b5001547988f
+# Source0-md5:	b4cefa643e95f5670997b5001547988f
 BuildRequires:	kde4-kdelibs-devel
 BuildRequires:	kde4-kdepimlibs-devel
 
