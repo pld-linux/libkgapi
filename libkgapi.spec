@@ -1,12 +1,12 @@
 Summary:	Library to access to Google services
 Name:		libkgapi
-Version:	0.4.1
+Version:	2.0.2
 Release:	1
 License:	GPL v2+
 Group:		Development/Libraries
 URL:		http://www.progdan.cz/2012/05/libkgoogle-libkgapi
-Source0:	ftp://ftp.kde.org/pub/kde/stable/libkgapi/%{version}/src/%{name}-%{version}.tar.bz2
-# Source0-md5:	b4cefa643e95f5670997b5001547988f
+Source0:	ftp://ftp.kde.org/pub/kde/stable/libkgapi/%{version}/src/%{name}-%{version}.tar.xz
+# Source0-md5:	27c406bb32b8cf0199cd44952bb8680e
 BuildRequires:	kde4-kdelibs-devel
 BuildRequires:	kde4-kdepimlibs-devel
 
@@ -51,13 +51,20 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README CHANGELOG LICENSE
+%doc README LICENSE
 %attr(755,root,root) %{_libdir}/libkgapi.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libkgapi.so.?
+%attr(755,root,root) %{_libdir}/libkgapi2.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libkgapi2.so.?
 
 %files devel
 %defattr(644,root,root,755)
+%{_includedir}/LibKGAPI2
 %{_includedir}/libkgapi
+%{_includedir}/libkgapi2
 %{_pkgconfigdir}/libkgapi.pc
+%{_pkgconfigdir}/libkgapi2.pc
 %attr(755,root,root) %{_libdir}/libkgapi.so
+%attr(755,root,root) %{_libdir}/libkgapi2.so
 %{_libdir}/cmake/LibKGAPI
+%{_libdir}/cmake/LibKGAPI2
