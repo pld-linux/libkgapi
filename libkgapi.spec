@@ -8,7 +8,7 @@ Source0:	http://download.kde.org/stable/libkgapi/%{version}/src/%{name}-%{versio
 # Source0-md5:	f3f2e4e68bb8baf849935f2f2eecf781
 URL:		http://www.progdan.cz/2012/05/libkgoogle-libkgapi
 BuildRequires:	kde4-kdelibs-devel
-BuildRequires:	kde4-kdepimlibs-devel
+BuildRequires:	kde4-kdepimlibs-devel >= 4.13.80
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
