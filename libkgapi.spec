@@ -7,8 +7,12 @@ Group:		Development/Libraries
 Source0:	http://download.kde.org/stable/libkgapi/%{version}/src/%{name}-%{version}.tar.bz2
 # Source0-md5:	f3f2e4e68bb8baf849935f2f2eecf781
 URL:		http://www.progdan.cz/2012/05/libkgoogle-libkgapi
+BuildRequires:	automoc4
+BuildRequires:	cmake
 BuildRequires:	kde4-kdelibs-devel
 BuildRequires:	kde4-kdepimlibs-devel >= 4.13.80
+BuildRequires:	perl-Qt4-devel
+BuildRequires:	qt4-build
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
