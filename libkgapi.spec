@@ -1,7 +1,7 @@
 Summary:	Library to access to Google services
 Name:		libkgapi
 Version:	2.2.0
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Development/Libraries
 Source0:	http://download.kde.org/stable/libkgapi/%{version}/src/%{name}-%{version}.tar.bz2
@@ -55,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README LICENSE
 %attr(755,root,root) %{_libdir}/libkgapi2.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libkgapi2.so.1
+%attr(755,root,root) %ghost %{_libdir}/libkgapi2.so.2
 
 %files devel
 %defattr(644,root,root,755)
