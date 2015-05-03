@@ -1,7 +1,7 @@
 Summary:	Library to access to Google services
 Name:		libkgapi
 Version:	2.2.0
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		Development/Libraries
 Source0:	http://download.kde.org/stable/libkgapi/%{version}/src/%{name}-%{version}.tar.bz2
